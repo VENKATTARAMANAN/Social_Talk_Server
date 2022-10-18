@@ -4,7 +4,6 @@ const { AccessChat } = require("../Controllers/post")
 const router = express.Router()
 const { authenticate } = require("../Middlewares/authenticate")
 
-
 router.get('/', authenticate, GetChats)
 router.post('/', authenticate, AccessChat)
 
